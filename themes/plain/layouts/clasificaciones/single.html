@@ -1,0 +1,48 @@
+{{ define "main" }}
+<div class="container p-3 my-3 border">
+<h5>{{ .Title }}</h5>
+
+<h6>Movie details</h6>
+<table class="table table-hover table-bordered">
+    <tbody>
+        <tr> 
+            <td>Title</td>
+            <td>{{ .Params.Title}}</td>
+        </tr>
+        <tr>
+            <td>Year </td>
+            <td>{{ .Params.Year}}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>{{ .Params.Age}}</td>
+        </tr>
+        <tr>
+            <td>IMDb</td>
+            <td>{{ .Params.IMDb}}</td>
+        </tr>
+        <tr>
+            <td>Rotten Tomatoes </td>
+            <td>{{ .Params.RottenTomatoes}}</td>
+        </tr>
+        <tr>
+            <td>Netflix</td>
+            <td>{{ .Params.Netflix}}</td>
+        </tr>
+        <tr>
+            <td>Hulu </td>
+            <td>{{ .Params.Hulu}}</td>
+        </tr>
+        <tr>
+            <td>Prime Video </td>
+            <td>{{ .Params.PrimeVideo}}</td>
+        </tr>
+        <tr>
+            <td>Disney+ </td>
+            <td>{{ .Params.Disney}}</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+{{ end }}
