@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container p-3 my-3 border">
+<h5>{{ .Title }}</h5>
+
+<h6>Detalles de la Aerolinea</h6>
+<table class="table table-hover table-bordered">
+    <tbody>
+        <tr> 
+            <td>Name</td>
+            <td>{{ .Params.Title}}</td>
+        </tr>
+        <tr>
+            <td>Description </td>
+            <td>{{ .Params.Description}}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+</div>
+{{ end }}
