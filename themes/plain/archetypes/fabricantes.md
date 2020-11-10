@@ -1,7 +1,7 @@
 ---
-fabricanteId: {{ replace .Name "-" " " }}
+fabricanteId:
 Title:
-aerolineaId: {{ delimit .Params.aerolineaId ", " " and " }}
+aerolineaId:
 Industria:
 Fundación:
 Fundador:
