@@ -9,15 +9,26 @@
             <td>Name</td>
             <td>{{ .Params.Title}}</td>
         </tr>
+        <tr> 
+            <td>Industria</td>
+            <td>{{ .Params.Industria}}</td>
+        </tr>
+        <tr> 
+            <td>Fundación</td>
+            <td>{{ .Params.Fundación}}</td>
+        </tr>
+        <tr> 
+            <td>Fundador</td>
+            <td>{{ .Params.Fundador}}</td>
+        </tr>
+        <tr> 
+            <td>sede</td>
+            <td>{{ .Params.sede}}</td>
+        </tr>
         <tr>
             <td>Description </td>
             <td>{{ .Params.Description}}</td>
         </tr>
-        <td>Aerolineas</td>
-        <td>
-        {{ $t := $.Site.GetPage.Params.aerolineaId}}
-            <a href="/aerolineas/{{ .Params.aerolineaId}}">{{ $t.Title }}</a>
-        </td>
     </tbody>
 </table>
 
