@@ -1,5 +1,8 @@
 +++
 aerolineaId= "swiss"
 Title="SWISS INTERNATIONAL AIRLINES"
-Description=""
+Fundacion="2002"
+Sede="Basel, Suiza"
+Description="es la principal aerolínea de Suiza que presta servicios principalmente en Europa y hacia América del Norte, América del Sur, Asia y África."
+avionId=[]
 +++
