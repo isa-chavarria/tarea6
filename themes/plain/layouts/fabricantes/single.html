@@ -34,7 +34,7 @@
             <td>
                 {{ range .Params.avionId }}
                     {{ $t := $.Site.GetPage .}}
-                    <a href="/avionId/{{ .}}">{{ $t.Title }}</a>
+                    <a href="/aviones/{{ .}}">{{ $t.Title }}</a>
                 {{ end }}
             </td>
         </tr>

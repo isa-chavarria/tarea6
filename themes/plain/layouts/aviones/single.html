@@ -10,8 +10,30 @@
             <td>{{ .Params.Title}}</td>
         </tr>
         <tr>
-            <td>Description </td>
-            <td>{{ .Params.Description}}</td>
+            <td>Aerolínea</td>
+            <td>
+                {{ range .Params.aerolineaId }}
+                    {{ $t := $.Site.GetPage .}}
+                    <a href="/aerolineas/{{ .}}">{{ $t.Title }}</a>
+                {{ end }}
+            </td>
+        </tr>
+        <tr>
+            <td>Fabricantes</td>
+            <td>
+                {{ range .Params.fabricanteId }}
+                    {{ $t := $.Site.GetPage .}}
+                    <a href="/fabricantes/{{ .}}">{{ $t.Title }}</a>
+                {{ end }}
+            </td>
+        </tr>
+        <tr> 
+            <td>Origen</td>
+            <td>{{ .Params.origin}}</td>
+        </tr>
+        <tr> 
+            <td>Primer vuelo</td>
+            <td>{{ .Params.primer_vuelo}}</td>
         </tr>
      
     </tbody>
