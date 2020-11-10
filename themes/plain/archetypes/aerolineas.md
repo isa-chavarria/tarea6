@@ -1,5 +1,4 @@
 ---
-aerolineaId:
 Title:
 Fundacion:
 Sede:

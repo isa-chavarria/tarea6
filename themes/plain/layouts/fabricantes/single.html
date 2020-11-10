@@ -22,12 +22,21 @@
             <td>{{ .Params.Fundador}}</td>
         </tr>
         <tr> 
-            <td>sede</td>
+            <td>Sede</td>
             <td>{{ .Params.sede}}</td>
         </tr>
         <tr>
             <td>Description </td>
             <td>{{ .Params.Description}}</td>
+        </tr>
+        <tr>
+            <td>Aviones</td>
+            <td>
+                {{ range .Params.avionId }}
+                    {{ $t := $.Site.GetPage .}}
+                    <a href="/avionId/{{ .}}">{{ $t.Title }}</a>
+                {{ end }}
+            </td>
         </tr>
     </tbody>
 </table>
